@@ -1,0 +1,270 @@
+.frontend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: prompt, sans-serif;
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .menu-up{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 15px;
+            z-index: 3;
+            color:#efc2b3;
+            
+            .menu-up-sides{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                top: 0;
+                right: 0;
+                width: 98%;
+                background-color:#1a2456;
+                height: 50px;
+                @media (max-width: 425px) {
+                    
+                }
+            
+                .monogram{
+                    display: flex;
+                    margin-left: 7px;
+                    align-items: center;
+    
+                    .icon{
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    .monogram-text{
+                        margin-left: 11px;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                        font-size: 14px;
+                        opacity: 1;
+                        @media (max-width: 375px) {
+                            font-size: 10.5px;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .monogram:hover{
+                    color: #ff8b68;
+                }
+        
+                .menu{
+                    margin-right: 4px;
+                    display: flex;
+    
+                    .right-menu{
+                        display: flex;
+                        list-style-type: none;
+                        gap: 5px;
+    
+                        li{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            a{
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: #efc2b3;
+                                font-size: 12px;
+                                letter-spacing: 2px;
+                                font-weight: 400;
+                            }
+
+                            .grey:hover{
+                                color: #f0efed;
+                                opacity: 0.8;
+                            }
+
+                            .bold:hover{
+                                color: #ff8b68;
+                                opacity: 0.9;
+                            }
+
+                            .shop{
+                                font-weight: 500;
+                            }
+
+                            .shop:hover{
+                                font-weight: 590;
+                                opacity: 0.9;
+                            }
+                        }
+
+                        .euro{
+                            @media (max-width: 375px) {
+                                display: flex;
+                                margin-right: 10px;
+                            }
+                            .EUR{
+                                margin-right: 10px;
+                                @media (max-width: 375px) {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+
+                        .li-menu-main{
+                            margin-right: 20px;
+                            @media (max-width: 980px) {
+                                display: none;
+                            }
+                        }
+
+                        .li-bag{
+                            height: 40px;
+                
+                            .button-bag{
+                                background-color: #1a2456;
+                                border: none;
+                                
+                                .icon-bag{
+                                    color: #efc2b3;
+                                    font-size: 24px;
+                                    @media (max-width: 375px) {
+                                        margin-right: 15px;
+                                        font-size: 21px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .menu-responsive{
+                            display: none;
+                            margin-right: 10px;
+                            @media (max-width: 980px) {
+                                display: flex;
+                                font-size: 22px;
+                            }
+                            @media (max-width: 375px) {
+                                margin-right: 5px;
+                                font-size: 20px;
+                                
+                            }
+                            
+                        }
+
+                        .coin-menu{
+                            display: none;
+                            .coin-options{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .div-img{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 675px;
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                position: relative;
+                z-index: 1;
+                background-color: burlywood;
+                vertical-align: middle;
+                box-sizing: border-box;
+                filter: brightness(0.39);
+            }
+
+            .div-left{
+                position: absolute;
+                background-color: #ff8b68;
+                z-index: 2;
+                height: 675px;
+            }
+
+            .div-right{
+                position: absolute;
+                z-index: 2;
+                width: 53%;
+                height: 675px;
+                border-right: 1px solid #f0efed;
+                filter: brightness(0.39);
+                @media (max-width: 1591px) {
+                    border-right: 0px;
+                }
+            }
+
+            .dropdown{
+                position: absolute;
+                z-index: 3;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                bottom: 130px;
+                .dropdown-left{
+                    font-size: 45px;
+                    color: #fff;
+                }
+            }
+
+            .text-center{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                height: 675px;
+                @media (max-width: 375px) {
+                    width: 95%;
+                }
+                
+                .text-up{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    width: 30%;
+                    line-height: 1.2;
+                    color: #efc2b3;
+                    font-size: 37.5px;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    @media (max-width: 1400px) {
+                        width: 35%;
+                    }
+                    @media (max-width: 1200px) {
+                        width: 40%;
+                    }
+                    @media (max-width: 900px) {
+                        width: 50%;
+                    }
+                    @media (max-width: 600px) {
+                        width: 80%;
+                    }
+                }
+
+                .text-down{
+                    color: #efc2b3;
+                    font-size: 18.75px;
+                    @media (max-width: 375px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

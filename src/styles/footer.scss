@@ -1,0 +1,149 @@
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #1a2456;
+    justify-content: center;
+
+    .footer-content{
+        display: flex;
+        width: 75%;
+        margin: 40px 0;
+        justify-content: space-between;
+        @media (max-width: 1067px) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 658px) {
+            justify-content: space-between;
+        }
+
+        .footer-items{
+            display: flex;
+            width: 17.5%;
+            @media (max-width: 1067px) {
+                width: 32%;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 658px) {
+                width: 40%;
+            }
+            .footer-item{
+                display: flex;
+                flex-direction: column;
+                color: #efc2b3;
+
+                .footer-title{
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    font-size: 10.8px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                .footer-options{
+                    
+                    font-size: 13.5px;
+                    font-weight: 300;
+
+                    .space{
+                        margin-bottom: 5px;
+                    }
+
+                    .space:hover{
+                        color: #ff7952;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .footer-email{
+                        
+                        .input-tag{
+                            background-color: #1a2456;
+                            margin-top: 7px;
+                            border: 1px solid;
+                            border-color: #efc2b3;
+                            padding: 7px 7px;
+                            width: 46%;
+                        }
+
+                        .input-tag::placeholder{
+                            font-family: prompt, sans-serif;
+                            color: #f0efed;
+                            opacity: 0.75;
+                            letter-spacing: 0.3spx;
+                            font-weight: 300;
+                        }
+
+                        .button-tag{
+                            border-radius: 20px;
+                            color: #212529;
+                            background-color: #efc2b3;
+                            text-transform: uppercase;
+                            padding: 7px 25px;
+                            font-size: 0.7rem;
+                            letter-spacing: 1px;
+                            font-family: prompt, sans-serif;
+                            opacity: 0.65;
+                            font-weight: 600;
+                            border: 1px solid transparent;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .menu-icons{
+                        display: flex;
+                        gap: 7px;
+                        align-items: center;
+                        margin-top: 13px;
+                        margin-bottom: 20px;
+                 
+                        .icons{
+                            display: flex;
+                            border-radius: 50%;
+                            font-size: 1.45rem;
+                            padding: 2px;
+                            color: #1a2456;
+                            background-color: #efc2b3;
+                        }
+
+                        .instagram{
+                            font-size: 1.1rem;
+                            padding: 5px;
+                        }
+
+                        .twitter{
+                            font-size: 1.1rem;
+                            padding: 5px;
+                        }
+
+                        .facebook{
+                            padding: 2.5px;
+                        }
+
+                        .youtube{
+                            font-size: 0.9rem;
+                            padding: 7.3px;
+                        }
+                    }   
+                }
+
+                .footer-2023{
+                    font-size: 13.5px;
+                }
+            }
+        }
+
+        .subscribe{
+            width: 30%;
+            @media (max-width: 1067px) {
+                width: 50%;
+            }
+
+            @media (max-width: 658px) {
+                width: 100%;
+            }
+        }
+    }
+}
