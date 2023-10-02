@@ -75,10 +75,10 @@ const Footer = () => {
                             <button className='button-tag'>Submit</button>
                         </div>
                         <div className='menu-icons'>
-                            <a href='' className='icons instagram'><AiOutlineInstagram /></a>
-                            <a href='' className='icons twitter'><AiOutlineTwitter /></a>
-                            <a href='' className='icons facebook'><BiLogoFacebook /></a>
-                            <a href='' className='icons youtube'><AiFillYoutube /></a>
+                            <a href='https://www.google.com/' className='icons instagram'><AiOutlineInstagram /></a>
+                            <a href='https://www.google.com/' className='icons twitter'><AiOutlineTwitter /></a>
+                            <a href='https://www.google.com/' className='icons facebook'><BiLogoFacebook /></a>
+                            <a href='https://www.google.com/' className='icons youtube'><AiFillYoutube /></a>
                         </div>
                     </div>
                     <div className='footer-2023'>

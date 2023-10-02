@@ -23,16 +23,16 @@ const Header = () => {
             </div>
             <div className='menu'>
               <ul className='right-menu'>
-                <li className='li-menu-main'><a href='#' className='bold'>How it Works</a></li>
-                <li className='li-menu-main'><a href='#' className='grey'>Workflows<IoMdArrowDropdown /></a></li>
-                <li className='li-menu-main'><a href='#' className='bold'>Download</a></li>
-                <li className='li-menu-main'><a href='#' className='bold'>Blog</a></li>
-                <li className='li-menu-main'><a href='#' className='bold'>Support</a></li>
-                <li className='li-menu-main'><a href='#' className='bold shop'>Shop</a></li>
+                <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>How it Works</a></li>
+                <li className='li-menu-main'><a href='https://www.google.com/' className='grey'>Workflows<IoMdArrowDropdown /></a></li>
+                <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Download</a></li>
+                <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Blog</a></li>
+                <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Support</a></li>
+                <li className='li-menu-main'><a href='https://www.google.com/' className='bold shop'>Shop</a></li>
                 <li className='menu-responsive'><AiOutlineMenu /></li>
                 <li className='li-bag'><button className='button-bag'><BsBag className='icon-bag'/></button></li>
                 <li className='euro'>
-                  <a className='EUR grey' href='#'>
+                  <a className='EUR grey' href='https://www.google.com/'>
                     EUR
                     <IoMdArrowDropdown className='coin-button'/>
                   </a>
