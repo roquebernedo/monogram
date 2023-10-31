@@ -34,14 +34,14 @@ const Header = () => {
               <ul className='right-menu'>
                 <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>How it Works</a></li>
                 <li className='li-menu-main work'>
-                  <a href='#' className='grey'>
+                  <a href='.' className='grey'>
                     Workflows<IoMdArrowDropdown />
                   </a>
                   <div className='menu-vertical'>
-                    <div className='menu-coin'><a className='coin' href='#'>audio console</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>photo console</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>video console</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>mini console</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>audio console</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>photo console</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>video console</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>mini console</a></div>
                   </div>
                 </li>
                 <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Download</a></li>
@@ -51,17 +51,17 @@ const Header = () => {
                 <li className='menu-responsive'><AiOutlineMenu /></li>
                 <li className='li-bag'><button className='button-bag'><BsBag className='icon-bag'/></button></li>
                 <li className='euro'>
-                  <a className='EUR grey' href='#'>
+                  <a className='EUR grey' href='.'>
                     EUR
                     <IoMdArrowDropdown className='coin-button'/>
                   </a>
                   <div className='menu-vertical'>
-                    <div className='menu-coin'><a className='coin' href='#'>USD</a><a className='coin' href='#'>($)</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>CAD</a><a className='coin' href='#'>($)</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>EUR</a><a className='coin' href='#'>(€)</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>AUD</a><a className='coin' href='#'>($)</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>GBP</a><a className='coin' href='#'>(£)</a></div>
-                    <div className='menu-coin'><a className='coin' href='#'>JPY</a><a className='coin' href='#'>(¥)</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>USD</a><a className='coin' href='.'>($)</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>CAD</a><a className='coin' href='.'>($)</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>EUR</a><a className='coin' href='.'>(€)</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>AUD</a><a className='coin' href='.'>($)</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>GBP</a><a className='coin' href='.'>(£)</a></div>
+                    <div className='menu-coin'><a className='coin' href='.'>JPY</a><a className='coin' href='.'>(¥)</a></div>
                   </div>
                   
                 </li>

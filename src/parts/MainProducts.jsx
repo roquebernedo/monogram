@@ -3,9 +3,6 @@ import '../styles/MainProducts.scss'
 
 const Item = ({ title, price, information, image, image2 }) => {
   const [hovered, setHovered] = useState(false);
-  const [isOpacity, setIsOpacity] = useState(0);
-  if(isOpacity){}
-  const opacity = hovered ? 0 : 1
 
   const handleMouseEnter = () => {
     setHovered(true);
