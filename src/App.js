@@ -5,6 +5,8 @@ import Header from './parts/Header';
 import MainProducts from './parts/MainProducts';
 
 function App() {
+  console.log(window.scrollY)
+  console.log(window.innerHeight)
 
   return (
     <div className='frontend'>

@@ -13,7 +13,7 @@
 
         .menu-up{
             display: flex;
-            position: absolute;
+            position: fixed;
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -105,16 +105,105 @@
                         }
 
                         .euro{
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            
                             @media (max-width: 375px) {
                                 display: flex;
                                 margin-right: 10px;
                             }
                             .EUR{
                                 margin-right: 10px;
+                                
                                 @media (max-width: 375px) {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                }
+                            }
+
+                            .menu-vertical{
+                                position: absolute;
+                                display: none;
+                                flex-direction: column;
+                                background-color: #fff;
+                                top: 35px;
+                                right: 0px;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                background-color: transparent;
+                                
+
+                                .menu-coin{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                   
+                                    .coin{
+                                        display: flex;
+                                        justify-content: center;
+                                        text-align: center;
+                                        
+                                        align-items: center;
+                                        
+                                      
+                                    }
+                                  
+                                }
+                            }
+                        }
+
+                        .euro:hover{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            .menu-vertical{
+                                
+                                display: flex;
+                                
+                                flex-direction: column;
+                                color: #212529;
+                                text-align: center;
+                                width: 110px;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #fff;
+                                padding: 8px 0;
+
+                                .menu-coin{
+                                    display: flex;
+                                    justify-content: space-around;
+                                    text-align: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    padding: 3px 0;
+                                        
+                                    .coin{
+                                        color: black;
+                                        display: flex;
+                                        text-align: center;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1rem;
+                                        font-weight: 300;
+                                    }
+
+                                    .krw{
+                                        margin-right: 10px;
+                                    }
+
+                                    .corean{
+
+                                    }
+                                }
+
+                                .menu-coin:hover{
+                                    background-color: rgb(235, 232, 223);
                                 }
                             }
                         }
@@ -123,6 +212,70 @@
                             margin-right: 20px;
                             @media (max-width: 980px) {
                                 display: none;
+                            }
+                        }
+
+                        .work{
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+
+                            .menu-vertical{
+                                display: none;
+                            }
+
+
+                        }
+
+                        .work:hover{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            .menu-vertical{
+                                position: absolute;
+                                display: flex;
+                                top: 35px;
+                                flex-direction: column;
+                                color: #212529;
+                                text-align: center;
+                                width: 180px;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #fff;
+                                padding: 8px 0;
+
+                                .menu-coin{
+                                    display: flex;
+                                    justify-content: space-around;
+                                    text-align: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    padding: 3px 0;
+                                        
+                                    .coin{
+                                        color: black;
+                                        display: flex;
+                                        text-align: center;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1rem;
+                                        font-weight: 300;
+                                    }
+
+                                    .krw{
+                                        margin-right: 10px;
+                                    }
+
+                                    .corean{
+
+                                    }
+                                }
+
+                                .menu-coin:hover{
+                                    background-color: rgb(235, 232, 223);
+                                }
                             }
                         }
 
@@ -154,16 +307,11 @@
                             @media (max-width: 375px) {
                                 margin-right: 5px;
                                 font-size: 20px;
-                                
                             }
-                            
                         }
 
                         .coin-menu{
                             display: none;
-                            .coin-options{
-
-                            }
                         }
                     }
                 }
@@ -198,7 +346,7 @@
             .div-right{
                 position: absolute;
                 z-index: 2;
-                width: 53%;
+                width: 6%;
                 height: 675px;
                 border-right: 1px solid #f0efed;
                 filter: brightness(0.39);
@@ -217,6 +365,7 @@
                 .dropdown-left{
                     font-size: 45px;
                     color: #fff;
+                    cursor: pointer;
                 }
             }
 

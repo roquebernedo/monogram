@@ -5,6 +5,15 @@ import { IoMdArrowDropdown } from "react-icons/io"
 import { AiOutlineDown, AiOutlineMenu } from "react-icons/ai"
 
 const Header = () => {
+
+  function handleScroll(page) {
+    const skillsSection = document.getElementById(page);
+    if (skillsSection) {
+      skillsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    console.log("hola")
+  };
+  
   return (
     <header>
         <div className='menu-up'>
@@ -24,7 +33,17 @@ const Header = () => {
             <div className='menu'>
               <ul className='right-menu'>
                 <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>How it Works</a></li>
-                <li className='li-menu-main'><a href='https://www.google.com/' className='grey'>Workflows<IoMdArrowDropdown /></a></li>
+                <li className='li-menu-main work'>
+                  <a href='#' className='grey'>
+                    Workflows<IoMdArrowDropdown />
+                  </a>
+                  <div className='menu-vertical'>
+                    <div className='menu-coin'><a className='coin' href='#'>audio console</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>photo console</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>video console</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>mini console</a></div>
+                  </div>
+                </li>
                 <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Download</a></li>
                 <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Blog</a></li>
                 <li className='li-menu-main'><a href='https://www.google.com/' className='bold'>Support</a></li>
@@ -32,20 +51,20 @@ const Header = () => {
                 <li className='menu-responsive'><AiOutlineMenu /></li>
                 <li className='li-bag'><button className='button-bag'><BsBag className='icon-bag'/></button></li>
                 <li className='euro'>
-                  <a className='EUR grey' href='https://www.google.com/'>
+                  <a className='EUR grey' href='#'>
                     EUR
                     <IoMdArrowDropdown className='coin-button'/>
                   </a>
+                  <div className='menu-vertical'>
+                    <div className='menu-coin'><a className='coin' href='#'>USD</a><a className='coin' href='#'>($)</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>CAD</a><a className='coin' href='#'>($)</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>EUR</a><a className='coin' href='#'>(€)</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>AUD</a><a className='coin' href='#'>($)</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>GBP</a><a className='coin' href='#'>(£)</a></div>
+                    <div className='menu-coin'><a className='coin' href='#'>JPY</a><a className='coin' href='#'>(¥)</a></div>
+                  </div>
+                  
                 </li>
-                <ul className='coin-menu'>
-                  <li className='coni-options'>USD ($)</li>
-                  <li className='coni-options'>CAD ($)</li>
-                  <li className='coni-options'>EUR (€)</li>
-                  <li className='coni-options'>AUD ($)</li>
-                  <li className='coni-options'>GBP (£)</li>
-                  <li className='coni-options'>KRW (₩)</li>
-                  <li className='coni-options'>JPY (¥)</li>
-                </ul>
               </ul>
             </div>
           </div>
@@ -55,7 +74,7 @@ const Header = () => {
           <div className='div-left'></div>
           <div className='div-right'></div>
           <div className='dropdown'>
-            <AiOutlineDown className='dropdown-left' />
+            <AiOutlineDown delay={1000} onClick={() => handleScroll('itemsID')} className='dropdown-left' />
           </div>
           <div className='text-center'>
             <h1 className='text-up'>A console for every workflow</h1>

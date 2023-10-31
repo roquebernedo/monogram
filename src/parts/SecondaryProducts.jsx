@@ -85,6 +85,7 @@ const SecondaryProducts = () => {
                    information={item.information} 
                    image={item.image} 
                    price={item.price} 
+                   key={item.id}
             />)
         )}
         </div>

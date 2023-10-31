@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/footer.scss'
 import { BiLogoFacebook } from "react-icons/bi"
 import { AiFillYoutube, AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai"
+import CookieBar from '../components/CookieBar'
 
 
 const Footer = () => {
@@ -87,6 +88,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        <CookieBar/>
     </div>
   )
 }
