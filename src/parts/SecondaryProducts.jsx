@@ -1,17 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/secondaryproducts.scss'
 
 const Item = ({ title, price, image }) => {
+    const [hovered, setHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+    
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
     return (
         <div className='item'>
-            <div className='sale'>
+            <div className='sale' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <img className='image' alt='' src={image} />
                 <div className='pre-order'>PRE-ORDER</div>
             </div>
             <div className='info'>
             <div className='name-price'>
                 <div className='name'>{title}</div>
-                <div className='price'>{price} €</div>
+                {hovered ? <div className='shop'>shop now</div> : <div className='price'>{price} €</div>}
             </div>
             </div>
         </div>

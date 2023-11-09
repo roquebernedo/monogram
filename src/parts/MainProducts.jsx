@@ -15,15 +15,16 @@ const Item = ({ title, price, information, image, image2 }) => {
     return (
         <div className='item'>
             <div className='sale' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img className='image' alt='' src={hovered ? image2 : image} />
+              <img className='image' alt='' src={image} />
+              <img className='image hidden' alt='' src={image2} />
               <div className='pre-order'>PRE-ORDER</div>
             </div>
-            <div className='info'>
+            <div className='info' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <div className='name-price'>
-                <div className='name'>{title}</div>
+                <div className={ hovered ? 'name hover' : 'name'}>{title}</div>
                 {hovered ? <div className='shop'>shop now</div> : <div className='price'>{price} €</div>}
               </div>
-              <div className='extrainfo'>{information}</div>
+              <div className={ hovered ? 'extrainfo hover': 'extrainfo'}>{information}</div>
             </div>
         </div>
     )
