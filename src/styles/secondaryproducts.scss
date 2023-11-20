@@ -53,6 +53,23 @@
                     font-weight: 500;
                     background-color: #ff8d6b;
                 }
+
+                .hidden{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    object-fit: contain;
+                    opacity: 0;
+                    transition: opacity .25s linear;
+                }
+            }
+
+            .sale:hover{
+                .hidden{
+                    opacity: 1;
+                }
             }
 
             .info{
@@ -60,8 +77,10 @@
                 .name-price{
                     display: flex;
                     justify-content: space-between;
+                    
 
                     .name{
+                        display: flex;
                         width: 60%;
                         font-size: 18.75px;
                         letter-spacing: 1.5px;
@@ -69,10 +88,33 @@
                         font-weight: 500;
                     }
 
+                    .hover{
+                        color: black;
+                    }
+
                     .price{
-                        font-size: 13.25px;
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 40%;
+                        font-size: 0.85rem;
                         font-weight: 300;
                         opacity: 0.7;
+                        padding-left: 0.9rem;
+                        padding-top: 0.375rem;
+                        padding-bottom: 0.375rem;
+                    }
+
+                    .shop{
+                        height: 100%;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        padding: 0.375rem 0.9rem;
+                        text-align: center;
+                        text-transform: uppercase;
+                        background-color: #1a2456;
+                        color: #fff;
+                        border-radius: 50px;
+                        transition: opacity .25s linear;
                     }
                 }
 
