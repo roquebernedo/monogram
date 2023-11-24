@@ -78,21 +78,18 @@ const SecondaryProducts = () => {
         id: 7,
         title: 'Console Pack Audio',
         image: 'https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-midi-final-august_750x540_crop_center.jpg?v=1661440892',
-        image2: '',
         price: 28.95,
     },
     {
         id: 8,
         title: 'Console Pack Photo',
         image: 'https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-photo-final-august_750x540_crop_center.jpg?v=1661440997',
-        image2: '',
         price: 37.95,
     },
     {
         id: 9,
         title: 'Console Pack Video',
         image: 'https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-video-final-august_750x540_crop_center.jpg?v=1661441054',
-        image2: '',
         price: 66.95,
     },
   ]
