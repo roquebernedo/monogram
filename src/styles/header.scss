@@ -30,9 +30,6 @@
                 width: 98%;
                 background-color:#1a2456;
                 height: 50px;
-                @media (max-width: 425px) {
-                    
-                }
             
                 .monogram{
                     display: flex;
@@ -108,14 +105,13 @@
                             display: flex;
                             flex-direction: column;
                             position: relative;
-                            
                             @media (max-width: 375px) {
                                 display: flex;
                                 margin-right: 10px;
                             }
+
                             .EUR{
                                 margin-right: 10px;
-                                
                                 @media (max-width: 375px) {
                                     display: flex;
                                     align-items: center;
@@ -134,8 +130,7 @@
                                 align-items: center;
                                 text-align: center;
                                 background-color: transparent;
-                                
-
+                            
                                 .menu-coin{
                                     display: flex;
                                     justify-content: center;
@@ -146,12 +141,8 @@
                                         display: flex;
                                         justify-content: center;
                                         text-align: center;
-                                        
                                         align-items: center;
-                                        
-                                      
-                                    }
-                                  
+                                    }   
                                 }
                             }
                         }
@@ -163,9 +154,7 @@
                             align-items: center;
                             
                             .menu-vertical{
-                                
                                 display: flex;
-                                
                                 flex-direction: column;
                                 color: #212529;
                                 text-align: center;
